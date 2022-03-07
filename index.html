@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Tap Lab</title>
+    <style>
+        body{padding: 0%; margin: 0%;}
+        canvas{border-style: solid;}
+        h1{margin: 0px;}
+        h3{margin: 0.1em;}
+        div{position: absolute; border-style: solid; border-radius: 0.3em; border-width: 0.1em; margin-left: 0.2%;}
+        #setting,#user-stats{padding: 0.2em;}
+    </style>
+</head>
+<body>
+    <h1>Aim reflect test</h1>
+    <canvas></canvas>
+    <div id="setting">
+        <h3>dot color:</h3>
+        <input type="text" id="dot-color" placeholder="red">
+        <h3>sensitivity:</h3>
+        <input type="text" id="sensitivity" placeholder="0.6">
+        <h3>enemy spawn:</h3>
+        <input type="text" id="enemy-spawn" placeholder="1">
+    </div>
+    <div id="user-stats">
+        <h3>travel time:</h3>
+        <h3 id="tt">30 px/sec</h3>
+        <h3>path effective:</h3>
+        <h3 id="pd"></h3>
+        <h3>Score:</h3>
+        <h3 id="sc"></h3>
+    </div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/setting.js"></script>
+<script src="js/userstats.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/spawner.js"></script>
+<script src="js/hitbox.js"></script>
+<script src="js/camera.js"></script>
+</html>
